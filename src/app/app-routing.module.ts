@@ -62,7 +62,8 @@ const routes: Routes = [
   {
     path: 'vidrio-if',
     loadChildren: () => import('./vidrio-if/vidrio-if.module').then( m => m.VidrioIfPageModule)
-  }
+  },
+  
 ];
 
 @NgModule({
