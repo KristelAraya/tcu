@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-busqueda',
-  templateUrl: './busqueda.page.html',
-  styleUrls: ['./busqueda.page.scss'],
+  selector: 'app-tec-if',
+  templateUrl: './tec-if.page.html',
+  styleUrls: ['./tec-if.page.scss'],
 })
-export class BusquedaPage implements OnInit {
+export class TecIfPage implements OnInit {
+
   items: any;
   
   
@@ -16,36 +16,17 @@ export class BusquedaPage implements OnInit {
           {nombre:"Mario",apellido:"Duran",url:"/horarios"},
           {nombre:"Pablo",apellido:"Vega",url:"/compa"},
           {nombre:"Pedro",apellido:"Vega",url:"/compa"},
+          {nombre:"Karla",apellido:"Vega",url:"/compa"},
     
           ];
 
-  constructor(private router: Router) {
+  constructor() {
     this.initializeItems();
    }
 
   ngOnInit() {
   }
-  irplastico(){
-    this.router.navigateByUrl("/plastico")
-  }
-  irpapel(){
-    this.router.navigateByUrl("/papel")
-  }
-  irmetal(){
-    this.router.navigateByUrl("/metal")
-  }
-  irvidrio(){
-    this.router.navigateByUrl("/vidrio")
-  }
-  irnoreci(){
-    this.router.navigateByUrl("/no-reci")
-  }
-  irtec(){
-    this.router.navigateByUrl("/tec")
-  }
-  irtetra(){
-    this.router.navigateByUrl("/tetra")
-  }
+ 
   initializeItems(){
     this.items = this.lista;
 

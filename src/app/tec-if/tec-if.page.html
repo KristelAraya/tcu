@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/Inbox"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tecnologia-if</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar showCancelButton="never" (ionInput)= "getItems($event)"></ion-searchbar>
+ 
+  <ion-list inset *ngFor="let p of items" >
+    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+      
+      <ion-label>{{ p.nombre }}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+
+</ion-content>
+

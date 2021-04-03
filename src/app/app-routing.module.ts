@@ -63,6 +63,30 @@ const routes: Routes = [
     path: 'vidrio-if',
     loadChildren: () => import('./vidrio-if/vidrio-if.module').then( m => m.VidrioIfPageModule)
   },
+  {
+    path: 'tetra',
+    loadChildren: () => import('./tetra/tetra.module').then( m => m.TetraPageModule)
+  },
+  {
+    path: 'tetra-if',
+    loadChildren: () => import('./tetra-if/tetra-if.module').then( m => m.TetraIfPageModule)
+  },
+  {
+    path: 'tec',
+    loadChildren: () => import('./tec/tec.module').then( m => m.TecPageModule)
+  },
+  {
+    path: 'tec-if',
+    loadChildren: () => import('./tec-if/tec-if.module').then( m => m.TecIfPageModule)
+  },
+  {
+    path: 'no-reci',
+    loadChildren: () => import('./no-reci/no-reci.module').then( m => m.NoReciPageModule)
+  },
+  {
+    path: 'no-reci-if',
+    loadChildren: () => import('./no-reci-if/no-reci-if.module').then( m => m.NoReciIfPageModule)
+  },
   
 ];
 

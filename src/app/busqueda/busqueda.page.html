@@ -11,7 +11,7 @@
   <ion-grid>
     <ion-row class="ion-justify-content-center">
      
-      <ion-col class="ion-align-self-center">
+      <ion-col size="9">
        <ion-button  shape="round" color="tertiary" (click)="irpapel()" >
          <ion-icon slot="start" name="cube"></ion-icon>
          Papel y Cartón
@@ -19,7 +19,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="ion-justify-content-center">
 
      <ion-col size="5">
        <ion-button  shape="round" color="primary" (click)="irvidrio()">
@@ -37,10 +37,38 @@
         </ion-button>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row class="ion-justify-content-center">
       <ion-col >
          <ion-button  shape="round" color="success" (click)="irmetal()">
            Metales
+           <ion-icon slot="end" name="rocket"></ion-icon>
+         </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8">
+        <ion-button  shape="round" color="secondary" (click)="irtetra()">
+          <ion-icon slot="start" name="pint"></ion-icon>
+          Tetra Pack
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col >
+         <ion-button  shape="round" color="success" (click)="irtec()">
+           Productos Tecnologicos
+           <ion-icon slot="end" name="rocket"></ion-icon>
+         </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col >
+         <ion-button  shape="round" color="success" (click)="irnoreci()">
+           No reciclables 
            <ion-icon slot="end" name="rocket"></ion-icon>
          </ion-button>
       </ion-col>
